@@ -1,128 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Previous Jobs</title>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="author" content="Daniel Lozano"/>
-    <meta name="company" content="elite-tronics"/>
+
     <!-- Page Icon -->
     <link rel="shortcut icon" href="media/logo-vertical_1.ico"/>
-    <link rel="stylesheet" type="text/css" href="css/gallery/demo.css" />
-    <link rel="stylesheet" type="text/css" href="css/gallery/demo.css" />
-    <link rel="stylesheet" type="text/css" href="css/gallery/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/gallery/elastislide.css" />
-    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
-    <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css' />
 
-    <link href="css/demo.css" rel="stylesheet">
-    <link href="css/superbox.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="css/side_bar/style.css">
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <noscript>
-        <style>
-            .es-carousel ul{
-                display:block;
-            }
-        </style>
-    </noscript>
-    <script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">
-			<div class="rg-image-wrapper">
-				{{if itemsCount > 1}}
-					<div class="rg-image-nav">
-						<a href="#" class="rg-image-nav-prev">Previous Image</a>
-						<a href="#" class="rg-image-nav-next">Next Image</a>
-					</div>
-				{{/if}}
-				<div class="rg-image"></div>
-				<div class="rg-loading"></div>
-				<div class="rg-caption-wrapper">
-					<div class="rg-caption" style="display:none;">
-						<p></p>
-					</div>
-				</div>
-			</div>
-		</script>
+    <!-- CSS -->
+    <link href="css/style.css" rel="stylesheet">
 
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+          type="text/css">
 
-    <script>
-        function w3_open() {
-            document.getElementById("mySidebar").style.display = "block";
+    <!-- Gallery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+
+    <link rel="stylesheet" href="css/gallery-grid.css">
+
+    <style>
+        #baguetteBox-overlay .full-image img {
+            box-shadow: none !important;
         }
-        function w3_close() {
-            document.getElementById("mySidebar").style.display = "none";
-        }
-    </script>
+    </style>
 </head>
+
 <body>
-<!-- Side Bar-->
-<ul class="navigation">
-    <li class="nav-item"><a href="index.php">Home</a></li>
-    <li class="nav-item"><a href="cctv.html">Security Cameras</a></li>
-    <li class="nav-item"><a href="access-control.html">Access Control</a></li>
-    <li class="nav-item"><a href="home-theater.html">Home Theater</a></li>
-    <li class="nav-item"><a href="structure-wiring.html">Structure Wiring and Network</a></li>
-    <li class="nav-item"><a href="previous-jobs.html">Previous Jobs</a></li>
-    <li class="nav-item"><a href="index.php#contact">Contact</a></li>
-</ul>
-
-<input type="checkbox" id="nav-trigger" class="nav-trigger" />
-<label for="nav-trigger"></label>
-
-<!-- Side Bar-->
-
-<div class="site-wrap" style="background:#1F1F1F url(images/pattern.png) repeat top left;">
-    <div class="container">
-        <h1 style="font-size: 40px">Structure Wiring and Network</h1>
-
-        <div class="content">
-            <div id="rg-gallery" class="rg-gallery">
-                <div class="rg-thumbs">
-                    <!-- Elastislide Carousel Thumbnail Viewer -->
-                    <div class="es-carousel-wrapper">
-                        <div class="es-nav">
-                            <span class="es-nav-prev">Previous</span>
-                            <span class="es-nav-next">Next</span>
-                        </div>
-                        <div class="es-carousel">
-                        <ul>
-                            <li><a href="#"><img src="media/previous-jobs/thumbs/1.jpg" data-large="img/Previous Jobs/1.png" alt="image01"/></a></li>
-                            <li><a href="#"><img src="media/previous-jobs/thumbs/2.jpg" data-large="img/Previous Jobs/2.png" alt="image02"/></a></li>
-                            <li><a href="#"><img src="media/previous-jobs/thumbs/3.jpg" data-large="img/Previous Jobs/3.png" alt="image03"/></a></li>
-                            <li><a href="#"><img src="media/previous-jobs/thumbs/4.jpg" data-large="img/Previous Jobs/4.png" alt="image04"/></a></li>
-                            <li><a href="#"><img src="media/previous-jobs/thumbs/5.jpg" data-large="img/Previous Jobs/5.png" alt="image05"/></a></li>
-                            <li><a href="#"><img src="media/previous-jobs/thumbs/6.jpg" data-large="img/Previous Jobs/6.png" alt="image06"/></a></li>
-                            <li><a href="#"><img src="media/previous-jobs/thumbs/7.jpg" data-large="img/Previous Jobs/7.png" alt="image07"/></a></li>
-                            <li><a href="#"><img src="media/previous-jobs/thumbs/8.jpg" data-large="img/Previous Jobs/8.png" alt="image08"/></a></li>
-                            <li><a href="#"><img src="media/previous-jobs/thumbs/9.jpg" data-large="img/Previous Jobs/9.png" alt="image09"/></a></li>
-                            <li><a href="#"><img src="media/previous-jobs/thumbs/10.jpg" data-large="img/Previous Jobs/10.png" alt="image10"/></a></li>
-                            <li><a href="#"><img src="media/previous-jobs/thumbs/11.jpg" data-large="img/Previous Jobs/11.png" alt="image11"/></a></li>
-                            <li><a href="#"><img src="media/previous-jobs/thumbs/12.jpg" data-large="img/Previous Jobs/12.png" alt="image12"/></a></li>
-                        </ul>
-                    </div>
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+    <div class="container topnav">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="dropdown">
+                <div id="left-buttons">
+                    <a class="navbar-brand topnav" href="/">Home</a>
+                    <a class="navbar-brand topnav" href="previous-jobs.html">Previous Jobs</a>
                 </div>
-                <!-- End Elastislide Carousel Thumbnail Viewer -->
-            </div><!-- rg-thumbs -->
-        </div><!-- rg-gallery -->
-    </div><!-- content -->
-</div><!-- container -->
+            </div>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="cctv.html">CCTV</a>
+                </li>
+
+                <li>
+                    <a href="access-control.html">Access Control</a>
+                </li>
+                <li>
+                    <a href="home-theater.html">Home Theater</a>
+                </li>
+                <li>
+                    <a href="structure-wiring.html">Structure Wiring</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+<div class="container gallery-container">
+    <h1>Previous Jobs</h1>
+
+    <div class="tz-gallery">
+        <div class="row"></div>
+    </div>
 </div>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
-<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="js/jquery.elastislide.js"></script>
-<script type="text/javascript" src="js/gallery.js"></script>
-<script src="js/jquery.superbox.js"></script>
+
 <script>
-    $(function() {
+    $(document).ready(function () {
+        var $row = $('.tz-gallery .row');
 
-        // Call SuperBox
-        $('.MyGallery').SuperBox();
+        for (var I = 1; I <= 12; I++) {
+            var html =
+                '<div class="col-sm-6 col-md-4">' +
+                '  <a class="lightbox" href="media/previous-jobs/' + I + '.png">' +
+                '    <img src="media/previous-jobs/' + I + '.png" alt="">' +
+                '  </a>' +
+                '</div>';
+            $row.append(html);
+        }
 
+        baguetteBox.run('.tz-gallery');
     });
 </script>
 </body>
